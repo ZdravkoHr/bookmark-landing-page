@@ -1,0 +1,74 @@
+.container {
+	margin: auto;
+	max-width: 1300px;
+}
+
+.section-text {
+	text-align: center;
+	p {
+		padding: 1rem 0;
+		color: $grayish-blue;
+	}
+}
+
+*[class^='btn'] {
+	border: 0;
+	border-radius: 5px;
+	padding: 1rem;
+	cursor: pointer;
+	transition: 0.4s transform ease-out;
+	box-shadow: 1px 1px 4px $grayish-blue;
+	border: 2px solid transparent;
+	font-weight: 600;
+
+	&:active {
+		transform: scale(0.9);
+	}
+
+	&:hover {
+		background: transparent;
+	}
+}
+
+.btn-primary {
+	background-color: $blue;
+	border-color: $blue;
+	color: #fff;
+
+	&:hover {
+		color: $blue;
+	}
+}
+
+.btn-red {
+	background-color: $red;
+	border-color: $red;
+	color: #fff;
+
+	&:hover {
+		color: $red;
+		background-color: #fff;
+	}
+}
+
+.btn-secondary {
+	&:hover {
+		border-color: $darkest-blue;
+		color: $darkest-blue;
+	}
+}
+
+.separated-item {
+	list-style: none;
+	color: $darkest-blue;
+	border-top: 1px solid $grayish-blue;
+
+	&:last-child {
+		border-bottom: 1px solid $grayish-blue;
+	}
+
+	@include tablet {
+		border-top: 0;
+		border-bottom: 1px solid $grayish-blue;
+	}
+}
